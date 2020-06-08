@@ -20,7 +20,6 @@
     "crypto-js": "^3.1.9-1",
     "dingtalk-jsapi": "^2.8.7",
     "jsonfile": "^6.0.1",
-    "node-sass": "^4.14.1",
     "postcss-cssnext": "^3.1.0",
     "postcss-import": "^12.0.1",
     "postcss-import-resolver": "^2.0.0",
@@ -44,7 +43,6 @@
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-2": "^6.24.1",
-    "canvas": "^2.6.1",
     "clipboard": "^2.0.4",
     "eslint": "^4.15.0",
     "eslint-friendly-formatter": "^3.0.0",
@@ -58,6 +56,7 @@
     "sass-loader": "^7.3.1",
     "vue-jest": "^3.0.5",
     "vue-server-renderer": "2.5.17",
-    "vuedraggable": "^2.23.2"
+    "vuedraggable": "^2.23.2",
+    "node-sass": "^4.14.1"
   }
 }
