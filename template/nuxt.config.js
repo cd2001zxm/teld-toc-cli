@@ -7,18 +7,6 @@ module.exports = {
 
 
   wrpSgHostUrl:"http://sgi.wyqcd.net:7777/api/invoke?SID=",
-  //wrpSgHostUrl:"https://sgi.teld.cn/api/invoke?SID=",
-
-  //系统根据所在容器，自动加载对应的脚本
-  // TeldApp_JSSDK_Url : "//cv.teld.cn/static/original/js/jteld.js?v=2.0",
-
-  // WX_JSSDK_Url : "//res.wx.qq.com/open/js/jweixin-1.4.0.js",
-
-  // Alipay_JSSDK_Url : "//gw.alipayobjects.com/as/g/h5-lib/alipayjsapi/3.1.1/alipayjsapi.min.js",
-
-  // GaoDeMapUrl:"https://webapi.amap.com/maps?v=1.4.15&key=db9741b828f4ac811937b1793ce4b950&plugin=AMap.ToolBar&callback=MapInit",
-
-  // UseGaoDeMapUIURL:"https://webapi.amap.com/ui/1.0/main.js?v=1.0.11",
 
   /*
   ** Headers of the page
@@ -42,6 +30,12 @@ module.exports = {
     script:[
       { src: '/app.setting.js', defer: false },
       { src:'//res.wx.qq.com/open/js/jweixin-1.4.0.js',defer: false}
+        // 可加装的容器url
+        // TeldApp_JSSDK_Url : "//cv.teld.cn/static/original/js/jteld.js?v=2.0",
+        // WX_JSSDK_Url : "//res.wx.qq.com/open/js/jweixin-1.4.0.js",
+        // Alipay_JSSDK_Url : "//gw.alipayobjects.com/as/g/h5-lib/alipayjsapi/3.1.1/alipayjsapi.min.js",
+        // GaoDeMapUrl:"https://webapi.amap.com/maps?v=1.4.15&key=db9741b828f4ac811937b1793ce4b950&plugin=AMap.ToolBar&callback=MapInit",
+        // UseGaoDeMapUIURL:"https://webapi.amap.com/ui/1.0/main.js?v=1.0.11",
     ]
   },
   css: [
@@ -70,10 +64,6 @@ module.exports = {
     //需要图表组件时引入，不需要的场合，为了性能，请注释
     {
       src: '@@/node_modules/@teld/component-proxy/export/chart',
-      ssr: true
-    },
-    {
-      src: '~/plugins/teld-components',
       ssr: true
     },
     {

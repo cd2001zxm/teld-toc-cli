@@ -8,11 +8,13 @@
             "targets": {
               "node": "current"
             },
-            "debug":true
+            "debug":false
           }
         ]
+      ],
+      "plugins": [ 
+        ["@babel/plugin-proposal-decorators", { "legacy": true }]
       ]
-
     }
   }
 }

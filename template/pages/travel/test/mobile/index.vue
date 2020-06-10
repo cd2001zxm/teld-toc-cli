@@ -6,12 +6,12 @@
     <tm-circle v-model="currentRate" :rate="30" :speed="100" text="123" />
     <tm-rate v-model="value" />
     
-    <t-chart :data="chartData" prevent-default>
+    <!-- <t-chart :data="chartData" prevent-default>
       <t-scale :options="yOptions" />
      <t-tooltip disabled />
      <t-pie :radius="0.85" series-field="name" />
      <t-legend :options="legendOptions" />
-    </t-chart>
+    </t-chart> -->
   </tm-row>
     
 </template>
@@ -78,8 +78,8 @@ export default {
     this.$store.commit("increment")
     console.log("loadDataFromVuex:"+this.$store.state.counter)
 
-    let {getServiceUrl} = require('@/plugins/teld.config')
-    let sgApi = require('@/plugins/utils/sgApi.js')
+    let {getServiceUrl} = require('@teld/api-proxy/lib/common')
+    let sgApi = require('@teld/api-proxy/lib/ajax')
     var postData ={
       "BusUnitID":'1111',
       "ComapnyID":'2222'

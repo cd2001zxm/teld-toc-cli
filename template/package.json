@@ -25,14 +25,14 @@
     "postcss-import-resolver": "^2.0.0",
     "postcss-loader": "^3.0.0",
     "postcss-url": "^8.0.0",
-    "@teld/nuxt":"^1.0.1"
+    "@teld/nuxt": "^1.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/plugin-external-helpers": "^7.8.3",
     "@babel/plugin-transform-runtime": "^7.9.6",
     "@nuxt/babel-preset-app": "^2.12.2",
-    "@teld/api-proxy": "^1.0.9",
+    "@teld/api-proxy": "^1.0.17",
     "@teld/component-proxy": "^1.0.3",
     "@vue/test-utils": "^1.0.3",
     "axios": "^0.19.2",
@@ -52,12 +52,12 @@
     "jest-canvas-mock": "^2.2.0",
     "less": "^3.7.1",
     "less-loader": "^4.1.0",
+    "node-sass": "^4.14.1",
     "postcss-pxtorem": "^5.1.1",
     "sass-loader": "^7.3.1",
     "vue-jest": "^3.0.5",
     "vue-server-renderer": "2.5.17",
-    "vuedraggable": "^2.23.2",
-    "node-sass": "^4.14.1"
+    "vuedraggable": "^2.23.2"
   },
   "config": {
     "nuxt": {

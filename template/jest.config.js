@@ -18,9 +18,8 @@ module.exports = {
     '.*\\.(vue)$': 'vue-jest'
   },
   //setupFiles:['<rootDir>/node_modules/teld-component-proxy/lib/teld-ui.mobile.js'],
-  "transformIgnorePatterns": [
-    "node_modules/(?!(teld-component-proxy)/)"
-  ],
+
+  transformIgnorePatterns: ["<rootDir>/node_modules/(?!(@teld/component-proxy|@teld/api-proxy))"],
  // transformIgnorePatterns: ["<rootDir>/node_modules/(?!teld-component-proxy)"],
   collectCoverage: true,
   collectCoverageFrom: [
