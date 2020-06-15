@@ -54,12 +54,12 @@ module.exports = {
     //需要pc端组件时引入，不需要的场合，为了性能，请注释
     {
       src: '@@/plugins/components/pc',
-      ssr: true
+      ssr: false
     },
     //需要移动端组件时引入，不需要的场合，为了性能，请注释
     {
       src: '@@/plugins/components/mobile',
-      ssr: true
+      ssr: false
     },
     //需要图表组件时引入，不需要的场合，为了性能，请注释
     {
@@ -87,7 +87,7 @@ module.exports = {
       manifest:'manifest.js'
     },
 
-    uglify:true,
+    uglify:false,
 
     /*
     ** Run ESLint on save

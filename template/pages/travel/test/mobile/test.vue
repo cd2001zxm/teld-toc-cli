@@ -12,10 +12,6 @@
      <t-pie :radius="0.85" series-field="name" />
      <t-legend :options="legendOptions" />
     </t-chart> -->
-
-    <tm-draggable v-model="myList" group="people" @start="drag=true" @end="drag=false">
-      <div v-for="element in myList" :key="element.id" style="height:30px">{{element.name}}</div>
-    </tm-draggable>
   </tm-row>
     
 </template>
@@ -50,7 +46,7 @@ export default {
         { name: '寻梦环游记', percent: 0.05, a: '1' },
         { name: '其他', percent: 0.02, a: '1' }
       ],
-      legendOptions: {
+            legendOptions: {
         position: 'right',
         itemFormatter (val) {
           return val + '  ' + map[val]
@@ -62,20 +58,6 @@ export default {
         }
       },
       map,
-      myList :[
-  {
-    "name": "Joao",
-    "id": 1
-  },
-  {
-    "name": "John",
-    "id": 0
-  },
-  {
-    "name": "Jean",
-    "id": 2
-  }
-]
     };
   },
   methods: {
@@ -87,30 +69,28 @@ export default {
     },
   },
   mounted(){
-    getDataById()
+    // getDataById()
 
-    console.log("-----------------------------根据环境获取的定位：")
-    window.envApi.getLocation((data)=>{
-      console.dir(data)
-    })
 
-    console.log("-----------------------------vuex数据存取：")
-    this.$store.commit("increment")
-    console.log("loadDataFromVuex:"+this.$store.state.counter)
-    this.$store.commit("increment")
-    console.log("loadDataFromVuex:"+this.$store.state.counter)
+    // window.envApi.getLocation((data)=>{
+    //   console.dir(data)
+    // })
 
-    // let {getServiceUrl} = require('@teld/api-proxy/lib/common')
-    // let sgApi = require('@teld/api-proxy/lib/ajax')
+
+    // this.$store.commit("increment")
+    // console.log("loadDataFromVuex:"+this.$store.state.counter)
+    // this.$store.commit("increment")
+    // console.log("loadDataFromVuex:"+this.$store.state.counter)
+
+    let {getServiceUrl} = require('@teld/api-proxy/lib/common')
+   // let sgApi = this.$ajax
     var postData ={
       "BusUnitID":'1111',
       "ComapnyID":'2222'
     }
-    let sgUrl = this.$utils.common.getServiceUrl("ASC-GetBusUnitCountInfo")
-    console.log("sgUrl========="+sgUrl)
-    console.log("-----------------------------sg服务调用：")
-    this.$utils.sgApi.getDataAsync({
-        url: sgUrl,
+
+    this.$ajax.getDataAsync({
+        url: getServiceUrl("ASC-GetBusUnitCountInfo"),
         data: postData,
         sucCallbackFunc:function (result) {
             console.dir(result)

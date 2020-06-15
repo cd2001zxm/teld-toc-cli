@@ -1,37 +1,99 @@
 /**
+ * 组件列表：
+ *   
+ *  ActionSheet,
+    AddressEdit,
+    AddressList,
+    Area,
+    Button,
+    Calendar,
+    Card,
+    Cell,
+    CellGroup,
+    Checkbox,
+    CheckboxGroup,
+    Circle,
+    Col,
+    Collapse,
+    CollapseItem,
+    ContactCard,
+    ContactEdit,
+    ContactList,
+    CountDown,
+    Coupon,
+    CouponCell,
+    CouponList,
+    DatetimePicker,
+    Divider,
+    DropdownItem,
+    DropdownMenu,
+    Field,
+    Form,
+    GoodsAction,
+    GoodsActionButton,
+    GoodsActionIcon,
+    Grid,
+    GridItem,
+    Icon,
+    Image,
+    ImagePreview,
+    IndexAnchor,
+    IndexBar,
+    Info,
+    Lazyload,
+    List,
+    Loading,
+    Locale,
+    NavBar,
+    NoticeBar,
+    NumberKeyboard,
+    Overlay,
+    Pagination,
+    Panel,
+    PasswordInput,
+    Picker,
+    Popup,
+    Progress,
+    PullRefresh,
+    Radio,
+    RadioGroup,
+    Rate,
+    Row,
+    Search,
+    Sidebar,
+    SidebarItem,
+    Skeleton,
+    Sku,
+    Slider,
+    Step,
+    Stepper,
+    Steps,
+    Sticky,
+    SubmitBar,
+    Swipe,
+    SwipeCell,
+    SwipeItem,
+    Switch,
+    SwitchCell,
+    Tab,
+    Tabbar,
+    TabbarItem,
+    Tabs,
+    Tag,
+    TreeSelect,
+    Uploader,
+    vuedraggable
  * 
- * @todo 后续会有大的调整
  * 
  */
-import Vue from 'vue'
 
-import Toast from 'vant/lib/toast';
-import Notify from 'vant/lib/notify'
-import Dialog from 'vant/lib/dialog';
-
-//------------------业务自定义位置开始--------------------
-import ActionSheet from 'vant/lib/action-sheet';
-import Button from 'vant/lib/button';
-import Circle from 'vant/lib/circle';
-import Rate from 'vant/lib/rate';
-import Row from 'vant/lib/row';
+import {install}  from '@teld/component-proxy/export/mobile.js'
 
 
-const components = [ActionSheet,Button,Circle,Rate,Row]
-//------------------业务自定义位置结束--------------------
-
-components.forEach(function (item) {
-    if(item.name) Vue.component(item.name.replace('van','tm'), item);
-    if (item.install) Vue.use(item);
-});
-
-Vue.prototype.$TM={}
-Vue.prototype.$TM.Toast = Toast
-Vue.prototype.$TM.Notify = Notify
-Vue.prototype.$TM.Dialog = Dialog
+import {
+    vuedraggable,ActionSheet,Button,Circle,Rate,Row
+} from '@teld/component-proxy/mobile.js'
 
 
+install([vuedraggable,ActionSheet,Button,Circle,Rate,Row])
 
-// var components = ['ActionSheet',Button,Circle,Rate]
-// const {install} = require('')
-// install(components)

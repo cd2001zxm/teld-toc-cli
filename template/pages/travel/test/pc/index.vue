@@ -7,9 +7,15 @@
     </tp-breadcrumb>
 </template>
 <script>
+      import { getDataById } from "@/page-modules/travel/test/testModule";
 export default {
+
     data(){
         return {}
+    },
+    mounted(){
+        this.$TP.$alert("pc端")
+        getDataById()
     }
 }
 </script>

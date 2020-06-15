@@ -12,7 +12,8 @@ localVue.use(Vuex)
 
 let store
 
-  beforeEach(() => {   
+  beforeEach(() => { 
+    
     jest.resetModules()
     jest.clearAllMocks()
 

@@ -1,39 +1,96 @@
 /**
- * 
- * @todo:后续会有大的调整
+ *  Loading,
+    MessageBox,
+    Message,
+    Notification,
+ * 这四个组件不需要引入，直接在vue文件中使用即可
+   组件列表：
+       Pagination,
+    Dialog,
+    Autocomplete,
+    Dropdown,
+    DropdownMenu,
+    DropdownItem,
+    Menu,
+    Submenu,
+    MenuItem,
+    MenuItemGroup,
+    Input,
+    InputNumber,
+    Radio,
+    RadioGroup,
+    RadioButton,
+    Checkbox,
+    CheckboxButton,
+    CheckboxGroup,
+    Switch,
+    Select,
+    Option,
+    OptionGroup,
+    Button,
+    ButtonGroup,
+    Table,
+    TableColumn,
+    DatePicker,
+    TimeSelect,
+    TimePicker,
+    Popover,
+    Tooltip,
+    Breadcrumb,
+    BreadcrumbItem,
+    Form,
+    FormItem,
+    Tabs,
+    TabPane,
+    Tag,
+    Tree,
+    Alert,
+    Slider,
+    Icon,
+    Row,
+    Col,
+    Upload,
+    Progress,
+    Spinner,
+    Badge,
+    Card,
+    Rate,
+    Steps,
+    Step,
+    Carousel,
+    CarouselItem,
+    Collapse,
+    CollapseItem,
+    Cascader,
+    ColorPicker,
+    Transfer,
+    Container,
+    Header,
+    Aside,
+    Main,
+    Footer,
+    Timeline,
+    TimelineItem,
+    Link,
+    Divider,
+    Image,
+    Calendar,
+    Backtop,
+    PageHeader,
+    CascaderPanel,
+    vuedraggable
  */
 
-import Vue from 'vue';
 
+import {install}  from '@teld/component-proxy/export/pc.js'
 import {
-  Loading,
-  MessageBox,
-  Message,
-  Notification,
-
-  //下面的部分自己选择，业务调整部分
   Breadcrumb,
   BreadcrumbItem
 
-} from 'element-ui'
+} from '@teld/component-proxy/pc.js'
 
-//下面的部分自己选择，业务调整部分
-let components = [Breadcrumb,BreadcrumbItem]
+install([Breadcrumb,BreadcrumbItem])
 
-components.forEach(function (item) {
-    Vue.component(item.name.replace('El','Tp'), item);
-});
-
-
-Vue.use(Loading.directive);
-Vue.prototype.$TP={}
-Vue.prototype.$TP.$loading = Loading.service;
-Vue.prototype.$TP.$msgbox = MessageBox;
-Vue.prototype.$TP.$alert = MessageBox.alert;
-Vue.prototype.$TP.$confirm = MessageBox.confirm;
-Vue.prototype.$TP.$prompt = MessageBox.prompt;
-Vue.prototype.$TP.$notify = Notification;
-Vue.prototype.$TP.$message = Message;
 
 
 

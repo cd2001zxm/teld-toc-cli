@@ -1,7 +1,7 @@
 /**
  * Created by chendong on 2019/4/8.
  */
-//import Vue from 'vue'
+import Vue from 'vue'
 //import jteldPlugin from './app/jteldPlugin'
 // import utilsPlugin from './utils/utilsPlugin'
 
@@ -34,3 +34,23 @@ Date.prototype.format = function(fmt) {
     }
     return fmt;
   }
+
+  import * as sgApi from '@teld/api-proxy/src/utils/ajax.js'
+  import * as common from '@teld/api-proxy/src/utils/common.js'
+  import * as cookie from '@teld/api-proxy/src/utils/cookie.js'
+  import * as gaode from '@teld/api-proxy/src/utils/gaode.js'
+  import * as storage from '@teld/api-proxy/src/utils/storage.js'
+  import * as url from '@teld/api-proxy/src/utils/url.js'
+
+  const utils = {
+    sgApi,cookie,common,gaode,storage,url
+  }
+  const plugin = {
+    install (Vue) {
+      Vue.prototype.$utils = utils
+      Vue.utils = utils
+    },
+    $utils: utils
+  }
+
+  Vue.use(plugin)

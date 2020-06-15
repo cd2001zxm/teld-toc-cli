@@ -1,3 +1,23 @@
-@import '~@teld/component-proxy/src/style/mobile.less';
+//基础样式引用
+@import "~@teld/component-proxy/style/mobile/style/base.less";//勿动
+
+
 /* 下放进行自定义内容替换，注意位置 */
-//@white: red;
+/* TODO:目前，移动端只能采用important的方式，强制覆盖样式
+*  下个版本会对该问题进行修正
+* 
+*/
+// @button-default-color: red;
+// @button-default-background-color:red!important;
+
+
+//项目使用组件引入
+@import "~@teld/component-proxy/style/mobile/action-sheet/index.less";
+@import "~@teld/component-proxy/style/mobile/button/index.less";
+@import "~@teld/component-proxy/style/mobile/circle/index.less";
+@import "~@teld/component-proxy/style/mobile/rate/index.less";
+@import "~@teld/component-proxy/style/mobile/row/index.less";
+
+
+
+

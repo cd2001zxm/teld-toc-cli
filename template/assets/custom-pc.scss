@@ -1,7 +1,17 @@
 
-$--color-primary: red;
+$--font-path: '~@teld/component-proxy/style/pc/fonts';//勿动
+@import "~@teld/component-proxy/style/pc/base.scss";//勿动
+
+/* 自定义变量书写，注意位置 */
+//$--color-white: red;
+
+
+//业务使用组件样式
+@import "~@teld/component-proxy/style/pc/alert.scss";
+@import "~@teld/component-proxy/style/pc/message.scss";
+@import "~@teld/component-proxy/style/pc/message-box.scss";
+@import "~@teld/component-proxy/style/pc/breadcrumb.scss";
+@import "~@teld/component-proxy/style/pc/breadcrumb-item.scss";
 
 
 
-/* 上方进行自定义变量书写，注意位置 */
-//@import "~@teld/component-proxy/src/style/pc.scss";
