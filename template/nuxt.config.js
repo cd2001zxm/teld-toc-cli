@@ -87,7 +87,7 @@ module.exports = {
       manifest:'manifest.js'
     },
 
-    uglify:false,
+    uglify:true,
 
     /*
     ** Run ESLint on save
