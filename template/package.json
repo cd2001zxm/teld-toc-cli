@@ -34,7 +34,7 @@
     "@nuxt/babel-preset-app": "^2.12.2",
     "@teld/api-proxy": "^1.1.0",
     "@teld/babel-plugin": "^1.0.8",
-    "@teld/component-proxy": "^1.0.7",
+    "@teld/component-proxy": "^1.1.0",
     "@vue/test-utils": "^1.0.3",
     "axios": "^0.19.2",
     "babel-core": "^7.0.0-bridge.0",
