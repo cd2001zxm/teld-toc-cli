@@ -41,9 +41,11 @@ Date.prototype.format = function(fmt) {
   import * as gaode from '@teld/api-proxy/src/utils/gaode.js'
   import * as storage from '@teld/api-proxy/src/utils/storage.js'
   import * as url from '@teld/api-proxy/src/utils/url.js'
+  import * as environment from '@teld/api-proxy/src/utils/environment.js'
+  import * as application from '@teld/api-proxy/src/utils/application.js'
 
   const utils = {
-    sgApi,cookie,common,gaode,storage,url
+    sgApi,cookie,common,gaode,storage,url,environment,application
   }
   const plugin = {
     install (Vue) {
