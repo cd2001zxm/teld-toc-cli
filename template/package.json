@@ -32,7 +32,7 @@
     "@babel/plugin-external-helpers": "^7.8.3",
     "@babel/plugin-transform-runtime": "^7.9.6",
     "@nuxt/babel-preset-app": "^2.12.2",
-    "@teld/api-proxy": "^1.1.0",
+    "@teld/api-proxy": "^1.2.2",
     "@teld/babel-plugin": "^1.0.8",
     "@teld/component-proxy": "^1.1.0",
     "@vue/test-utils": "^1.0.3",
