@@ -6,12 +6,6 @@
     //关键应用的英文简写
     appCode:'travel',
 
-    /**
-     * @param 仅有pc端：0
-     *        仅有moblie端：1
-     *        两者都有:2
-     */
-    ViewModule:1,
     //自定义用户中心地址
     UserCenterUrl:null,
     //是否使用高德地图.*设置为true，为了性能，框架不会直接加载高德地图，只是进行预加载
