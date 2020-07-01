@@ -64,7 +64,7 @@ module.exports = {
     //需要图表组件时引入，不需要的场合，为了性能，请注释
     {
       src: '@@/node_modules/@teld/component-proxy/export/chart',
-      ssr: true
+      ssr: false
     },
     {
       src: '~/plugins/teld-plugins',
