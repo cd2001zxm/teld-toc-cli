@@ -3,9 +3,6 @@ const path = require('path')
 
 module.exports = {
 
-  projectName:"",
-
-
   wrpSgHostUrl:"http://sgi.wyqcd.net:7777/api/invoke?SID=",
 
   /*
